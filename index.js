@@ -8,13 +8,13 @@ const project = '/projects/dc_general?jump=my';
 
 	const browser = await puppeteer.launch({
 		headless: false
-  });
+        });
   
 	const page = await browser.newPage();
 	page.setViewport({
 		width: 1366,
 		height: 768
-  });
+        });
   
 	await page.goto('http://192.168.0.16:85/login');
 	await page.type('#username', uname);
@@ -34,7 +34,7 @@ const project = '/projects/dc_general?jump=my';
 	await page.waitFor('#new_time_entry');
 	await page.type('#time_entry_hours', "8")
 	await page.select('#time_entry_activity_id', "33")
-  await page.$eval('#new_time_entry', el => el.submit());
+        await page.$eval('#new_time_entry', el => el.submit());
   
 	await browser.close();
 })();
