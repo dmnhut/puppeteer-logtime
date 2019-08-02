@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 const uname = '';
-const pwd = '';
+const passwd = '';
 const project = '/projects/dc_general?jump=my';
 
 (async() => {
