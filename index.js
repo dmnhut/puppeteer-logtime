@@ -5,7 +5,6 @@ const pwd = '';
 const project = '/projects/dc_general?jump=my';
 
 (async() => {
-
 	const browser = await puppeteer.launch({
 		headless: false
         });
